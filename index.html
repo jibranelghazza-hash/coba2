@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SoftaCalla Cookies — Final</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <div class="logo"><img src="softacalla_logo_circle (1).png" alt="SoftaCalla"></div>
+        <h1>SoftaCalla</h1>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#testi">Testimoni</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Buka menu"><span></span><span></span><span></button>
+
+      </nav>
+    </div>
+
+    <!-- Mobile panel (hidden on desktop) -->
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <a href="#beranda" class="mobile-link">Beranda</a>
+      <a href="#tentang" class="mobile-link">Tentang</a>
+      <a href="#produk" class="mobile-link">Produk</a>
+      <a href="#testi" class="mobile-link">Testimoni</a>
+      <a href="#kontak" class="mobile-link">Kontak</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="beranda" class="hero fade-on-scroll">
+    <div class="hero-img"><img src="https://softacalla.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-08-20-at-12.55.04_8416d7bc-e1758592378760.jpg" alt="SoftaCalla"></div>
+    <h2>Selamat Datang di SoftaCalla 🍪</h2>
+    <p>Cookies lembut, fresh from oven, tanpa pengawet. Pilihan rasa unik untuk cemilan atau hadiah.</p>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="fade-on-scroll">
+    <h2 class="section-title">Tentang Kami</h2>
+    <p class="center-text">SoftaCalla adalah brand cookies homemade yang dibuat dengan bahan berkualitas tinggi dan rasa lembut di mulut. Setiap gigitan dibuat untuk memberikan kehangatan dan kebahagiaan.</p>
+  </section>
+
+  <!-- PRODUK -->
+  <section id="produk">
+    <h2 class="section-title fade-on-scroll">Produk Kami</h2>
+    <div class="produk-list">
+
+      <div class="card fade-on-scroll" data-name="Choco Chip">
+        <img src="original choco chips.png" alt="Choco Chip">
+        <h3>Choco Chip</h3>
+        <div class="price">Rp4.000</div>
+        <div class="desc">Cookies coklat klasik dengan chip premium yang lumer di mulut.</div>
+      </div>
+
+      <div class="card fade-on-scroll" data-name="Matcha">
+        <img src="Matcha it’s time.png" alt="Matcha">
+        <h3>Matcha</h3>
+        <div class="price">Rp5.000</div>
+        <div class="desc">Matcha Jepang berpadu white-choco, lembut & wangi.</div>
+      </div>
+
+      <div class="card fade-on-scroll" data-name="Smores">
+        <img src="marsmalllow.png" alt="Smores">
+        <h3>Smores Marshmallow</h3>
+        <div class="price">Rp4.500</div>
+        <div class="desc">Marshmallow lembut dipanggang bersama crumble coklat.</div>
+      </div>
+
+      <div class="card fade-on-scroll" data-name="Cheese Velvet">
+        <img src="velvet.png" alt="Cheese Velvet">
+        <h3>Cheese Velvet</h3>
+        <div class="price">Rp5.000</div>
+        <div class="desc">Keju creamy dicampur choco crumbs, gurih & lembut.</div>
+      </div>
+
+      <div class="card fade-on-scroll" data-name="Double Choco">
+        <img src="choco.png" alt="Double Choco">
+        <h3>Double Choco</h3>
+        <div class="price">Rp5.000</div>
+        <div class="desc">Dua lapis coklat + ekstra chip untuk pecinta manis.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HARGA -->
+  <section id="harga" class="fade-on-scroll">
+    <h2 class="section-title">Daftar Harga</h2>
+    <div class="harga-list">
+      <div class="harga-card">Choco Chip — Rp4.000</div>
+      <div class="harga-card">Matcha — Rp5.000</div>
+      <div class="harga-card">Smores — Rp4.500</div>
+      <div class="harga-card">Cheese Velvet — Rp5.000</div>
+      <div class="harga-card">Double Choco — Rp5.000</div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section id="testi" class="testi-wrap fade-on-scroll">
+    <h2 class="section-title">Testimoni</h2>
+    <div class="slider" aria-roledescription="carousel" aria-label="testimoni pelanggan">
+      <div class="slides">
+        <div class="slide">
+          <p>“Teksturnya lembut banget, langsung jadi kado favorit kantor.”</p>
+          <small>— Rina, Jakarta</small>
+        </div>
+        <div class="slide">
+          <p>“Salted caramel dan cheese velvet juara! Manisnya pas.”</p>
+          <small>— Aldo, Bandung</small>
+        </div>
+        <div class="slide">
+          <p>“Packaging estetik dan rasa enak. Recomended untuk hadiah.”</p>
+          <small>— Siti, Surabaya</small>
+        </div>
+      </div>
+      <div class="slider-controls" aria-hidden="false">
+        <button class="ctrl" id="prev">‹</button>
+        <button class="ctrl" id="next">›</button>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="fade-on-scroll">
+    <div class="kontak-center-text">
+        <h2 class="section-title">Ingin Pesan?</h2>
+        <p class="center-text">
+            Hubungi kami melalui platform favoritmu untuk beli SoftaCalla. Klik tombol di bawah untuk chat/checkout.
+        </p>
+    </div>
+    <h2 class="section-title">Hubungi Kami</h2>
+    
+    <div class="kontak-btn">
+      <a href="https://s.shopee.co.id/9UsATRwOvM?share_channel_code=1" target="_blank" rel="noopener">Beli di Shopee</a>
+      <a href="https://wa.me/6287776486718" target="_blank" rel="noopener">Chat WhatsApp</a>
+      <a href="https://www.instagram.com/softacalla" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SoftaCalla Cookies — Semua hak dilindungi.
+  </footer>
+
+</body>
+</html>
